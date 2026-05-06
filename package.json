@@ -40,12 +40,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sancharsetu/winston-transport-mongoose.git"
+    "url": "git+https://github.com/optiwariindia/winston-transport-mongoose.git"
   },
   "bugs": {
-    "url": "https://github.com/sancharsetu/winston-transport-mongoose/issues"
+    "url": "https://github.com/optiwariindia/winston-transport-mongoose/issues"
   },
-  "homepage": "https://github.com/sancharsetu/winston-transport-mongoose#readme",
+  "homepage": "https://github.com/optiwariindia/winston-transport-mongoose#readme",
   "dependencies": {
     "mongoose": "^9.6.1",
     "winston": "^3.19.0",
