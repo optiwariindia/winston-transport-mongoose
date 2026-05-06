@@ -34,6 +34,11 @@ export class MongooseTransport extends Transport {
       ? connection.model(modelName)
       : connection.model(modelName, schema, collection);
 
+    // Ensure indexes are synced (especially for TTL updates)
+    this.model.syncIndexes().catch((err) => {
+      this.emit('error', new Error(`Failed to sync indexes: ${err.message}`));
+    });
+
     this.batchSize = batching?.batchSize ?? (batching ? 100 : 1);
     this.flushInterval = batching?.flushInterval ?? 5000;
 
