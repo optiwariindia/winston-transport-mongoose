@@ -5,3 +5,4 @@ dist
 tests/results
 .DS_Store
 docs/
+idea.md
